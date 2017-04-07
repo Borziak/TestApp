@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.n.testapplication.RegistrationActivity"
+    tools:showIn="@layout/activity_registration">
+
+    <TextView
+        android:id="@+id/title_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="31dp"
+        android:text="REGISTER HERE"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reg_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="101dp" />
+
+    <EditText
+        android:id="@+id/reg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="LOGIN"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_mail"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/reg_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="EMAIL"
+        android:layout_marginBottom="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_pass"
+        android:layout_marginLeft="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="85dp" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_pass_confirm"
+        android:layout_marginLeft="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="85dp" />
+
+    <EditText
+        android:id="@+id/reg_pass_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="textPassword"
+        android:layout_marginLeft="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/registration_confirm"
+        android:layout_marginStart="85dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:background="@drawable/line_bg"
+        app:layout_constraintTop_toBottomOf="@+id/reg_mail"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_pass"
+        app:layout_constraintVertical_bias="0.62"
+        android:layout_marginLeft="69dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="69dp" />
+
+    <Button
+        android:id="@+id/registration_confirm"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="102dp"
+        android:background="@drawable/border_bg"
+        android:elevation="0dp"
+        android:text="REGISTRATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="102dp" />
+
+    <Spinner
+        android:id="@+id/postalcode"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/border_bg"
+        android:entries="@array/countryList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

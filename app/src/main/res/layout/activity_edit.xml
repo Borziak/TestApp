@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.n.testapplication.EditActivity">
+
+    <EditText
+        android:id="@+id/death"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="49dp"
+        android:hint="DEATH"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintLeft_toRightOf="@+id/birthEntity"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="371dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="NAME"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <EditText
+        android:id="@+id/birthEntity"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="BIRTH"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionEntity"
+        android:layout_width="358dp"
+        android:layout_height="152dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="13dp"
+        android:hint="INPUT DESCRIPTION HERE"
+        android:background="@drawable/border_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/death" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/border_bg"
+        android:text="Add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEntity" />
+
+</android.support.constraint.ConstraintLayout>
